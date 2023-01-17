@@ -1,12 +1,20 @@
-export DISABLE_AUTO_TITLE='true'
+
+# Allias
+
+alias vim="nvim"
+alias vi="nvim"
+alias oldvim="vim"
 alias g="git"
 alias gs="git status"
 alias ga= "git add"
 alias gc= "git commit"
 alias gco= "git checkout"
 alias gb="git branch"
-eval "$(pyenv init --path)"
+
+
+export DISABLE_AUTO_TITLE='true'
 export NVM_DIR=~/.nvm
+export EDITOR=nvim
 source ~/.nvm/nvm.sh
 
 if [[ "$TERM" != "screen-255color" ]]
