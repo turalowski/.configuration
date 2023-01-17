@@ -1,0 +1,9 @@
+alias g="git"
+alias gs="git status"
+alias ga= "git add"
+alias gc= "git commit"
+alias gco= "git checkout"
+alias gb="git branch"
+eval "$(pyenv init --path)"
+export NVM_DIR=~/.nvm
+source ~/.nvm/nvm.sh

@@ -2,3 +2,8 @@
 
 cp ~/.tmux.conf ~/projects/.configuration/.tmux.conf
 cp -rf ~/.config/nvim ~/projects/.configuration/nvim
+cp ~/.bashrc ~/projects/.configuration/.bashrc
+cp ~/.bash-profile ~/projects/.configuration/.bash-profile
+cp ~/.bash_history ~/projects/.configuration/.bash_history
+cp ~/.zshrc ~/projects/.configuration/.zshrc
+cp ~/.zsh ~/projects/.configuration/.zsh
