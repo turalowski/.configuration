@@ -1,0 +1,12 @@
+app-cleaner
+discord
+slack
+vlc
+keka
+kap
+time-out
+insomnia
+docker
+git
+stats
+itsycal
