@@ -1,0 +1,7 @@
+#!/bin/bash
+# THIS SHELL WILL OVERRIDE ALL OF YOUR LOCAL COMMANDS
+# IF YOU ARE NOT SURE, WHAT THE HELL ARE YOU DOING
+# JUST DON'T DO THAT
+cp ./tmux.conf ~/.tmux.conf
+cp -rf ./nvim ~/.config/nvim 
+cp ./zshrc ~/.zshrc
