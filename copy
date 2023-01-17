@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cp ~/.tmux.conf ~/projects/.configuration/.tmux.conf
+cp -rf ~/.config/nvim ~/projects/.configuration/nvim
