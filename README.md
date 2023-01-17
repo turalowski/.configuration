@@ -1,12 +1,19 @@
 ## General info
 
-Mən bu yaxşılığı xalqımız üçün etmirəm.
+I'm not kind person.
 
-Sadəcə,
+I'm just someone,
 
-Kompyuterimi format etməyə hazırlaşıram
+who is going to reset his laptop,
 
-Greetings,
+and happy to share these config files in public repo,
+
+for others.
+
+## Executables
+
+- `copy` - I use this runnable to copy configuration files from root to repo
+- `replace` - This command is used to replace local configuration files. **DON'T USE IT IF YOU DON'T KNOW HOW TO USE IT**
 
 ## Useful information
 
