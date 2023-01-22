@@ -17,6 +17,13 @@ xargs brew install < apps.txt
 - Mac Fans Control
 - Magnet
 - KeyCastr
+- CheatSheet
+- SetApp
+- Dropzone
+- AltTab
+- AppCleaner
+- CleanShot X
+-
 - NodeJS / nvm
   - `npm install -g yarn lite-server license gitignore`
 
