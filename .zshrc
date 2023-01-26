@@ -17,10 +17,10 @@ export NVM_DIR=~/.nvm
 export EDITOR=nvim
 source ~/.nvm/nvm.sh
 
-if [[ "$TERM" != "screen-255color" ]]
-then
-  tmux attach-session -t "Basic" || tmux new-session -s "Basic"
-fi
+# if [[ "$TERM" != "screen-255color" ]]
+# then
+#   tmux attach-session -t "Basic" || tmux new-session -s "Basic"
+# fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -109,6 +109,9 @@ plugins=(
   colorize
   common-aliases
   copyfile
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  web-search
 )
 source $ZSH/oh-my-zsh.sh
 

@@ -1,5 +1,4 @@
 local opts = { noremap = true, silent = true }
-
 --Remap space as leader key
 local keymap = vim.keymap
 vim.g.mapleader = " "
@@ -8,8 +7,10 @@ keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 local term_opts = { silent = true }
 
--- General keymaps
+keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>")
 
+-- General keymaps
+keymap.set("n", "<leader>li", '<Cmd>let @+=expand("%")..":L"..line(".")<CR>')
 keymap.set("i", "jk", "<ESC>") -- Exit from INSERT mode easily
 keymap.set("n", "<leader>nh", ":nohl<CR>") -- Clear highlight easily
 keymap.set("n", "x", '"_x') -- Delete character will not copy character to register

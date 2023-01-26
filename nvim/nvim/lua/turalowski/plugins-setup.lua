@@ -46,8 +46,6 @@ return packer.startup(function(use)
 
 	-- Color schemes
 	use("gruvbox-community/gruvbox")
-	use("folke/tokyonight.nvim")
-
 	use("bluz71/vim-nightfly-guicolors")
 	use({ "catppuccin/nvim", as = "catppuccin" })
 	use({ "rose-pine/neovim", as = "rose-pine" })
@@ -98,7 +96,11 @@ return packer.startup(function(use)
 	-- configuring lsp servers
 	use("neovim/nvim-lspconfig") -- enable LSP
 	use("hrsh7th/cmp-nvim-lsp") -- Auto completion
-	use({ "glepnir/lspsaga.nvim", branch = "main" }) -- Better UI
+	use({
+		"glepnir/lspsaga.nvim",
+		branch = "main",
+	})
+	-- Better UI
 	use("jose-elias-alvarez/typescript.nvim") -- Better ts support
 	use("onsails/lspkind.nvim") -- icons to autocompletion vindow
 
@@ -160,6 +162,7 @@ return packer.startup(function(use)
 		ft = { "markdown" },
 	})
 
+	use("eandrju/cellular-automaton.nvim")
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	-- Undo tree

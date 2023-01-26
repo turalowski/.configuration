@@ -17,12 +17,14 @@ require("turalowski.plugins.fugitive")
 require("turalowski.plugins.colorizer")
 -- LSP
 require("turalowski.plugins.lsp.mason")
-require("turalowski.plugins.lsp.lspsaga")
 require("turalowski.plugins.lsp.lspconfig")
 require("turalowski.plugins.lsp.null-ls")
+require("turalowski.plugins.lsp.lspsaga")
 -- Bufferline
 require("turalowski.plugins.bufferline")
 -- Quick navigation
 require("turalowski.plugins.harpoon")
 -- Undo tree
 require("turalowski.plugins.undo-tree")
+-- animation
+require("turalowski.plugins.cellular-automaton")
