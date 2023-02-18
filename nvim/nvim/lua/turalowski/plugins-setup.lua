@@ -78,7 +78,7 @@ return packer.startup(function(use)
 	use("nvim-telescope/telescope.nvim")
 	use("nvim-telescope/telescope-file-browser.nvim")
 
-	use("theprimeagen/harpoon")
+	-- use("theprimeagen/harpoon")
 	-- Auto completion
 	use("hrsh7th/nvim-cmp") -- The completion plugin
 	use("hrsh7th/cmp-buffer") -- buffer completions
@@ -128,6 +128,7 @@ return packer.startup(function(use)
 	-- Git
 	use("tpope/vim-fugitive")
 	use("lewis6991/gitsigns.nvim")
+	use("airblade/vim-gitgutter")
 
 	-- TMUX
 	use({

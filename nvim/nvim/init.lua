@@ -12,7 +12,11 @@ require("turalowski.plugins.telescope")
 require("turalowski.plugins.nvim-cmp")
 require("turalowski.plugins.autopairs")
 require("turalowski.plugins.treesitter")
+
+--Git
 require("turalowski.plugins.gitsigns")
+require("turalowski.plugins.gitgutter")
+
 require("turalowski.plugins.fugitive")
 require("turalowski.plugins.colorizer")
 -- LSP
@@ -23,7 +27,7 @@ require("turalowski.plugins.lsp.lspsaga")
 -- Bufferline
 require("turalowski.plugins.bufferline")
 -- Quick navigation
-require("turalowski.plugins.harpoon")
+-- require("turalowski.plugins.harpoon")
 -- Undo tree
 require("turalowski.plugins.undo-tree")
 -- animation
