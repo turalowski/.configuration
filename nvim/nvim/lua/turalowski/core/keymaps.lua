@@ -3,20 +3,29 @@ local opts = { noremap = true, silent = true }
 local keymap = vim.keymap
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>")
 
 -- General keymaps
+-- Copy file name and line number properly
 keymap.set("n", "<leader>li", '<Cmd>let @+=expand("%")..":L"..line(".")<CR>')
-keymap.set("i", "jk", "<ESC>") -- Exit from INSERT mode easily
-keymap.set("n", "<leader>nh", ":nohl<CR>") -- Clear highlight easily
-keymap.set("n", "x", '"_x') -- Delete character will not copy character to register
-keymap.set("n", "<leader>+", "<C-a>") -- Increase number
-keymap.set("n", "<leader>-", "<C-x>") -- Decrease number
-
--- Move line effectively
+-- Exit from INSERT mode easily
+keymap.set("i", "jk", "<ESC>")
+-- Clear highlight easily
+keymap.set("n", "<leader>nh", ":nohl<CR>")
+-- Delete character will not copy character to register
+keymap.set("n", "x", '"_x')
+-- Increase number
+keymap.set("n", "<leader>+", "<C-a>")
+-- Decrease number
+keymap.set("n", "<leader>-", "<C-x>")
+-- Delete a word backwards
+keymap.set("n", "dw", 'vb"_d')
+-- Replace visual
+keymap.set("n", "<leader>rv", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+-- Move line to up
 keymap.set("v", "K", ":m '<-2<CR>gv=gv") -- live moving to up
+-- Move line to down
 keymap.set("v", "J", ":m '>+1<CR>gv=gv") -- live moving to down
 
 -- Modify screen navigations to keep the cursor in the middle
@@ -38,30 +47,20 @@ keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") -- go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") -- go to previous tab
 
--- Buffer shortcuts
-keymap.set("n", "<leader>bn", ":bnext<CR>") -- next buffer
-keymap.set("n", "<leader>bp", ":bprev<CR>") -- previous buffer
-keymap.set("n", "<Tab>", ":bnext<CR>") -- next buffer
-keymap.set("n", "<S-Tab>", ":bprev<CR>") -- previous buffer
-keymap.set("n", "<leader>bl", ":buffers<CR>") -- list of buffers
-keymap.set("n", "<leader>bx", ":bdelete<CR>") -- delete buffer
-
 -- File explorer
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 
 -- telescope
-keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>")
+-- keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>")
 -- keymap.set("n", "<leader>fs", "<cmd>Telescope grep_string<CR>")
-keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<CR>")
-keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<CR>")
-keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<CR>")
+-- keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<CR>")
+-- keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<CR>")
+-- keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<CR>")
 
 -- telescope git
-keymap.set("n", "<leader>fgf", "<cmd>Telescope git_files<CR>")
-keymap.set("n", "<leader>fgb", "<cmd>Telescope git_branches<CR>")
-keymap.set("n", "<leader>fgs", "<cmd>Telescope git_stash<CR>")
-keymap.set("x", "<leader>p", [["_dP]])
-keymap.set("n", "<leader>rv", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+-- keymap.set("n", "<leader>fgf", "<cmd>Telescope git_files<CR>")
+-- keymap.set("n", "<leader>fgb", "<cmd>Telescope git_branches<CR>")
+-- keymap.set("n", "<leader>fgs", "<cmd>Telescope git_stash<CR>")
 
 -- GitGutter
 -- keymap.set("n", "[h", "<cmd>GitGutterPrevHunk<CR>", opts)

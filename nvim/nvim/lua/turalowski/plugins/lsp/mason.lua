@@ -21,7 +21,7 @@ lspconfig.setup({
 		"html",
 		"pyright",
 		"cssls",
-		"sumneko_lua",
+		"lua_ls",
 		"eslint",
 		"glint",
 	},

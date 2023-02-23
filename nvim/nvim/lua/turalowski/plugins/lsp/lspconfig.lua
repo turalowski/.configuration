@@ -69,8 +69,14 @@ lspconfig["cssls"].setup({
 	capabilities = capabilities,
 })
 
+-- TailwindCSS
+lspconfig["tailwindcss"].setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
+
 -- LUA
-lspconfig["sumneko_lua"].setup({
+lspconfig["lua_ls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 	settings = {

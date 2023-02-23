@@ -49,6 +49,7 @@ return packer.startup(function(use)
 	use("bluz71/vim-nightfly-guicolors")
 	use({ "catppuccin/nvim", as = "catppuccin" })
 	use({ "rose-pine/neovim", as = "rose-pine" })
+	use({ "overcache/NeoSolarized", as = "neosolarized" })
 
 	-- TMUX & Split window navigation
 	use("christoomey/vim-tmux-navigator")

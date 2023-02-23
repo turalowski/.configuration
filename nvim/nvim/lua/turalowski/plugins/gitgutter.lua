@@ -3,4 +3,4 @@ if not status then
 	return
 end
 
-gitgutter.setup({})
+gitgutter.setup({ keymaps = {} })
