@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cp ~/.tmux.conf ./.tmux.conf
-cp -rf ~/.config/nvim ./nvim
-cp ~/.zshrc ./.zshrc
-cp ~/.tmux.conf ./.tmux.conf
+cp ~/.tmux.conf .
+cp -rf ~/.config/nvim .
+cp ~/.zshrc .
+cp ~/.tmux.conf .
