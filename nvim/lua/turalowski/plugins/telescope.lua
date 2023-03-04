@@ -12,6 +12,7 @@ end
 local fb_actions = require("telescope").extensions.file_browser.actions
 
 telescope.setup({
+	file_ignore_patterns = { "node%_modules/.*", ".git/.*", "docs/.*", "dist/.*" },
 	defaults = {
 		mappings = {
 			n = {
@@ -35,6 +36,7 @@ telescope.setup({
 					-- your custom normal mode mappings
 					["N"] = fb_actions.create,
 					["h"] = fb_actions.goto_parent_dir,
+					["<c-d>"] = require("telescope.actions").delete_buffer,
 					["/"] = function()
 						vim.cmd("startinsert")
 					end,
@@ -48,8 +50,8 @@ telescope.load_extension("file_browser")
 
 vim.keymap.set("n", ";f", function()
 	builtin.find_files({
-		no_ignore = false,
-		hidden = true,
+		-- no_ignore = false,
+		-- hidden = true,
 	})
 end)
 vim.keymap.set("n", ";l", function()

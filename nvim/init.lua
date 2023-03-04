@@ -32,3 +32,4 @@ require("turalowski.plugins.bufferline")
 require("turalowski.plugins.undo-tree")
 -- animation
 require("turalowski.plugins.cellular-automaton")
+require("turalowski.plugins.transparent")

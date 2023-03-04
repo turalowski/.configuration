@@ -4,3 +4,5 @@ cp ~/.tmux.conf .
 cp -rf ~/.config/nvim .
 cp ~/.zshrc .
 cp ~/.tmux.conf .
+cp -a ~/.config/skhd .
+cp -a ~/.config/yabai . 
