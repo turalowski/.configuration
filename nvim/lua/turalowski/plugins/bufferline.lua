@@ -37,4 +37,4 @@ vim.keymap.set("n", "<Tab>", "<Cmd>BufferLineCycleNext<CR>", {})
 vim.keymap.set("n", "<S-Tab>", "<Cmd>BufferLineCyclePrev<CR>", {})
 -- Buffer shortcuts
 vim.keymap.set("n", "<leader>bl", ":buffers<CR>") -- list of buffers
-vim.keymap.set("n", "<leader>bx", ":bdelete<CR>") -- delete buffer
+vim.keymap.set("n", "<leader>bx", ":delete<CR>") -- delete buffer

@@ -19,8 +19,6 @@ keymap.set("n", "x", '"_x')
 keymap.set("n", "<leader>+", "<C-a>")
 -- Decrease number
 keymap.set("n", "<leader>-", "<C-x>")
--- Delete a word backwards
-keymap.set("n", "dw", 'vb"_d')
 -- Replace visual
 keymap.set("n", "<leader>rv", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 -- Move line to up
